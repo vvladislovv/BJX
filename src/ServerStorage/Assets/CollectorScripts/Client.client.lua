@@ -14,6 +14,8 @@ local Tools = require(game.ReplicatedStorage:WaitForChild("Modules").Equipment.C
 
 local ToolInfo = Tools[_G.PData.Equipment.Tool]
 local AnimCustom = Tools[_G.PData.Equipment.Tool].AnimTools -- кастом в блоке StatsModule
+print(AnimCustom)
+print('ff')
 if not ToolInfo then warn("Tool is not in module!") return end
 
 local Collecting = false
