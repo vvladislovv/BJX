@@ -1,0 +1,1 @@
+return "The wasp's head.. I wonder where they got it from \n\n [Mask] \n x1.5 Red Pollen \n +10% Red Instant Conversion \n +100% Convert Rate \n"
