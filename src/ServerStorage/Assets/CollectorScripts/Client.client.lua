@@ -58,7 +58,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		script.Parent.Server.Collect:FireServer(HRP)
 
 		local Animation = Instance.new("Animation")
-		Animation.AnimationId ="rbxassetid://522635514"
+		Animation.AnimationId = AnimCustom       --"rbxassetid://522635514"
 
 		local AnimationTrack = Humanoid:LoadAnimation(Animation)
 		local Cooldown = ToolInfo.Cooldown-- / (PData.AllStats["Tools Speed"] / 100)
