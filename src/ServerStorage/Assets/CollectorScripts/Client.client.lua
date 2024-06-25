@@ -13,9 +13,9 @@ local Remotes = ReplicatedStorage.Remotes
 local Tools = require(game.ReplicatedStorage:WaitForChild("Modules").Equipment.Collectors).Collectors
 
 local ToolInfo = Tools[_G.PData.Equipment.Tool]
-local AnimCustom = Tools[_G.PData.Equipment.Tool].AnimTools -- кастом в блоке StatsModule
-print(AnimCustom)
-print('ff')
+
+local AnimCustom = Tools[_G.PData.Equipment.Tool].StatsModule.AnimTools -- кастом в блоке StatsModule
+
 if not ToolInfo then warn("Tool is not in module!") return end
 
 local Collecting = false
@@ -71,7 +71,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		Debounce = false
 
 		task.spawn(function()
-			wait(AnimationTrack.Length)
+			task.wait(AnimationTrack.Length)
 			Animation:Destroy()
 		end)
 	end
